@@ -1,0 +1,24 @@
+#!/bin/sh
+
+set -e
+
+# HomeBrew install
+if [ ! -f /usr/local/bin/brew ]; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# Dotfilesのclone
+if [ ! -d ~/dotfiles ]; then
+    cd ~
+    git clone git https://github.com/Rockreeee/dotfiles.git
+fi
+
+brew bundle -v --file=~/dotfiles/Brewfile
+
+# config作成
+if [ ! -d ~/.config ]; then
+    mkdir ~/.config
+fi
+
+# zshのリンク
+stow -v -d ~/dotfiles/packages -t ~ zsh starship
