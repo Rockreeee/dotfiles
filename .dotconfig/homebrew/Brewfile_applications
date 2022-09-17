@@ -1,0 +1,26 @@
+cask_args appdir: "/Applications"
+
+# Browser
+# cask "google-chrome"
+
+# Storage
+# cask "google-drive"
+# cask "notion"
+# cask "evernote"
+
+# Adobe
+# cask "adobe-creative-cloud"
+
+# Commutication
+# cask "slack"
+# cask "zoom"
+# cask "discord"
+
+# Dictionary
+# cask "deepl"
+
+# Utils
+# cask "karabiner-elements"
+# cask "imageoptim"
+# cask "google-japanese-ime"
+# cask "alfred"

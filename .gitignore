@@ -1,0 +1,76 @@
+# ------------------------------------------------------------------------
+# All ignore
+# ------------------------------------------------------------------------
+/**
+/.**
+
+# ------------------------------------------------------------------------
+# /
+# ------------------------------------------------------------------------
+!/.zshenv
+!/.zprofile
+!/.zshrc
+!/.gitconfig
+!/.gitignore
+!/.Makefile
+!/.README.md
+
+# ------------------------------------------------------------------------
+# /.dotconfig
+# ------------------------------------------------------------------------
+!/.dotconfig
+
+!/.dotconfig/bat
+!/.dotconfig/bat/bat.conf
+
+!/.dotconfig/homebrew
+!/.dotconfig/homebrew/Brewfile_applications
+!/.dotconfig/homebrew/Brewfile_dev_cli
+!/.dotconfig/homebrew/Brewfile_dev_gui
+!/.dotconfig/homebrew/Brewfile_homebrew
+
+!/.dotconfig/vscode
+!/.dotconfig/vscode/_setting.json
+!/.dotconfig/vscode/keybindings.json
+
+!/.dotconfig/idea
+!/.dotconfig/idea/macOS_Jimon.xml
+
+!/.dotconfig/lima
+!/.dotconfig/lima/docker_template.yml
+
+!/.dotconfig/zsh
+!/.dotconfig/zsh/profile
+!/.dotconfig/zsh/rc
+!/.dotconfig/zsh/rc/alias.zsh
+!/.dotconfig/zsh/rc/appearance.zsh
+!/.dotconfig/zsh/rc/bindkey.zsh
+!/.dotconfig/zsh/rc/completion.zsh
+!/.dotconfig/zsh/rc/history.zsh
+!/.dotconfig/zsh/rc/plugin.zsh
+!/.dotconfig/zsh/rc/wordstyle.zsh
+!/.dotconfig/zsh/rc/setopt.zsh
+!/.dotconfig/zsh/rc/xxenv.zsh
+!/.dotconfig/zsh/rc/zinit.zsh
+!/.dotconfig/zsh/rc/zi.zsh
+
+# ------------------------------------------------------------------------
+# /setup
+# ------------------------------------------------------------------------
+!/setup
+
+!/setup/deploy
+!/setup/deploy/deploy_home.sh
+!/setup/deploy/deploy_vscode.sh
+!/setup/deploy/deploy_idea.sh
+!/setup/deploy/deploy_lima_docker.sh
+!/setup/deploy/util_deploy.sh
+
+!/setup/init
+!/setup/init/init_homebrew.sh
+!/setup/init/init_lima_docker.sh
+!/setup/init/init_macOS.sh
+!/setup/init/init_node.sh
+!/setup/init/init_zinit.sh
+!/setup/init/init_zi.sh
+!/setup/init/lima_docker_limit.plist
