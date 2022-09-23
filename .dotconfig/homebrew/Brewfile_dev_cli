@@ -1,7 +1,7 @@
 cask_args appdir: "/Applications"
 
 # Utility
-# brew "jq"
+brew "jq"
 brew "peco"
 # brew "nmap"
 brew "tree"
