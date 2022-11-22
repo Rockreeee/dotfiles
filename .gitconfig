@@ -6,7 +6,7 @@
 [color]
 	ui = true
 [init]
-	templatedir = ~/.git-templates/git-secrets
+	# templatedir = ~/.git-templates/git-secrets
 	defaultBranch = main
 [alias]
 	graphall = log --graph --all --abbrev-commit --date=relative --pretty=format:'%C(red)%h %C(reset)-%C(magenta)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'

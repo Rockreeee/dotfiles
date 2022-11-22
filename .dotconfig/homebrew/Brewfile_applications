@@ -1,7 +1,7 @@
 cask_args appdir: "/Applications"
 
 # Browser
-# cask "google-chrome"
+cask "google-chrome"
 
 # Storage
 # cask "google-drive"
@@ -13,14 +13,16 @@ cask_args appdir: "/Applications"
 
 # Commutication
 # cask "slack"
-# cask "zoom"
-# cask "discord"
+cask "zoom"
+cask "discord"
 
 # Dictionary
-# cask "deepl"
+cask "deepl"
 
 # Utils
 # cask "karabiner-elements"
 # cask "imageoptim"
 # cask "google-japanese-ime"
-# cask "alfred"
+cask "alfred"
+cask "clipy"
+cask "rectangle"
