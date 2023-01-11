@@ -6,9 +6,6 @@ deploy-all:
 deploy-home:
 	bash ./setup/deploy/deploy_home.sh
 
-# deploy-idea:
-# 	bash ./setup/deploy/deploy_idea.sh
-
 deploy-vscode:
 	bash ./setup/deploy/deploy_vscode.sh
 
@@ -17,5 +14,3 @@ init-all:
 
 init-brew:
 	bash ./setup/init/init_homebrew.sh
-
-	

@@ -1,7 +1,3 @@
-# スピード測定用
-# .zshrc末尾のコマンドと共に使う
-# zmodload zsh/zprof && zprof
-
 # zsh
 export ZDOTDIR=$HOME
 export ZSHRC_DIR=$ZDOTDIR/.dotconfig/zsh/rc
@@ -12,3 +8,6 @@ export SAVEHIST=10000
 
 # bat
 export BAT_CONFIG_PATH=$ZDOTDIR/.dotconfig/bat/bat.conf
+
+# homebrew
+export PATH=/opt/homebrew/bin:$PATH
