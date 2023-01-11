@@ -53,6 +53,7 @@
 !/.dotconfig/zsh/rc/xxenv.zsh
 !/.dotconfig/zsh/rc/zinit.zsh
 !/.dotconfig/zsh/rc/zi.zsh
+!/.dotconfig/zsh/rc/prompt.zsh
 
 # ------------------------------------------------------------------------
 # /setup
