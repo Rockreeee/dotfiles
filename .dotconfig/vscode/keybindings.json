@@ -11,10 +11,10 @@
       "when": "terminalFocus"
     },
     // Toggle maximize/minimize terminal area.
-    {
-      "key": "ctrl+z",
-      "command": "workbench.action.toggleMaximizedPanel"
-    },
+    // {
+    //   "key": "ctrl+z",
+    //   "command": "workbench.action.toggleMaximizedPanel"
+    // },
     // Move teriminal area to right or bottom.
     {
       "key": "ctrl+m ctrl+space",
