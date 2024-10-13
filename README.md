@@ -1,4 +1,9 @@
 # dotfilesのディレクトリ構造
+ホームでヒレクトリ直下にクローンすることをおすすめします。（それ以外にクローンする時は、dotfiles/zshenvの以下を編集してください。）
+```zsh
+# dotfiles path
+export DOTFILES_DIR=~/dotfiles
+```
 
 ```zsh
 ~/dotfiles/
