@@ -1,0 +1,14 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[include]
+    path = ~/dotfiles/.gitconfig-work
+
+[includeIf "gitdir:~/git-private/"]
+	path = ~/dotfiles/.gitconfig-personal
+
+[includeIf "gitdir:~/dotfiles/"]
+	path = ~/dotfiles/.gitconfig-personal

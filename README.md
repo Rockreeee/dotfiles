@@ -46,6 +46,10 @@ chmod +x ~/dotfiles/setup/install-oh-my-zsh.sh
 # 実行
 ~/dotfiles/setup/install-oh-my-zsh.sh
 ```
+power10kインストール
+ ```zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+ ```
 
 ## 現状のzshファイルのシンボリックリンク適用
 ```zsh
