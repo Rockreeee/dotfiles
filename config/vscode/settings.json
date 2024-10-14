@@ -1,0 +1,4 @@
+{
+    "files.autoSave": "afterDelay",
+    "security.workspace.trust.untrustedFiles": "open"
+}

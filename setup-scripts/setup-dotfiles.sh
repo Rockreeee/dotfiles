@@ -1,4 +1,5 @@
 #!/bin/zsh
+
 DOTFILES_DIR=~/dotfiles
 
 # バックアップディレクトリ
@@ -17,8 +18,11 @@ create_symlink() {
     destination="$HOME/$1"
 
     if [ -e "$destination" ]; then
-        echo "$destination already exists. Moving to backup..."
-        mv "$destination" "$BACKUP_DIR"  # 既存のファイルをバックアップ
+        if [ ! -L "$destination" ]; then  # シンボリックリンクでない場合のみ移動
+            echo "$destination already exists. Moving to backup..."
+            mv "$destination" "$BACKUP_DIR"
+        else
+            echo "$destination is a symlink, not moving."
     fi
 
     ln -nfs "$source" "$destination"  # シンボリックリンクを作成

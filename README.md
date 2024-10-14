@@ -27,14 +27,6 @@ export DOTFILES_DIR=~/dotfiles
 └── .zshrc                     # インタラクティブシェル用の設定
 ```
 
-# Macのセットアップ
-```zsh
-# 実行権限付与
-chmod +x ~/dotfiles/setup/setup-MacOS.sh
-# 実行
-~/dotfiles/setup/setup-MacOS.sh
-```
-
 # zsh環境のセットアップ
 ## 必要なhomebrewパッケージをインストール
  ```zsh
@@ -58,7 +50,23 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ## zshファイルのシンボリックリンク適用
 ```zsh
 # 実行権限付与
-chmod +x ~/dotfiles/setup/setup-zsh.sh
+chmod +x ~/dotfiles/setup-scripts/setup-zsh.sh
 # 実行
-~/dotfiles/setup/setup-zsh.sh
+~/dotfiles/setup-scripts/setup-zsh.sh
+```
+
+# Macのセットアップ
+```zsh
+# 実行権限付与
+chmod +x ~/dotfiles/setup-scripts/setup-MacOS.sh
+# 実行
+~/dotfiles/setup-scripts/setup-MacOS.sh
+```
+
+# Vscodeのセットアップ
+```zsh
+# 実行権限付与
+chmod +x ~/dotfiles/setup-scripts/setup-vscode.sh
+# 実行
+~/dotfiles/setup-scripts/setup-vscode.sh
 ```
