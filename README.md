@@ -7,13 +7,12 @@ export DOTFILES_DIR=~/dotfiles
 
 ```zsh
 ~/dotfiles/
-├── setup/
+├── setup-scripts/
 │   ├── install-brew-package   # homebrewのインストールなど
 │   ├── install-oh-my-zsh      # oh-my-zshのインストール
 │   ├── setup-MacOS            # mac設定のセットアップ
-│   └── setup-zsh              # zsh/のセットアップ
+│   └── setup-dotfiles         # dotfilesのセットアップ
 ├── zsh/
-│   ├── .oh-my-zsh/            # oh-my-zshの設定
 │   ├── alias.zsh              # エイリアスの定義
 │   ├── bindkey.zsh            # キーバインドの定義
 │   ├── completion.zsh         # キーバインドの定義
@@ -51,12 +50,12 @@ chmod +x ~/dotfiles/setup/install-oh-my-zsh.sh
 # 実行
 ~/dotfiles/setup/install-oh-my-zsh.sh
 ```
-power10kインストール
+## power10kインストール
  ```zsh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
  ```
 
-## 現状のzshファイルのシンボリックリンク適用
+## zshファイルのシンボリックリンク適用
 ```zsh
 # 実行権限付与
 chmod +x ~/dotfiles/setup/setup-zsh.sh

@@ -4,35 +4,35 @@
 # ------------------------------------------------------------------------
 # oh-my-zsh
 # ------------------------------------------------------------------------
-source $DOTFILES_DIR/zsh/oh-my-zsh.zsh
+source $DOTFILES_DIR/config/zsh/oh-my-zsh.zsh
 
 # ------------------------------------------------------------------------
 # alias
 # ------------------------------------------------------------------------
-source $DOTFILES_DIR/zsh/alias.zsh
+source $DOTFILES_DIR/config/zsh/alias.zsh
 
 # ------------------------------------------------------------------------
 # bindkey
 # ------------------------------------------------------------------------
-source $DOTFILES_DIR/zsh/bindkey.zsh
+source $DOTFILES_DIR/config/zsh/bindkey.zsh
 
 # ------------------------------------------------------------------------
 # completion
 # ------------------------------------------------------------------------
-source $DOTFILES_DIR/zsh/completion.zsh
+source $DOTFILES_DIR/config/zsh/completion.zsh
 
 # ------------------------------------------------------------------------
 # env
 # ------------------------------------------------------------------------
-source $DOTFILES_DIR/zsh/env.zsh
+source $DOTFILES_DIR/config/zsh/env.zsh
 
 # ------------------------------------------------------------------------
 # functions
 # ------------------------------------------------------------------------
-source $DOTFILES_DIR/zsh/functions.zsh
+source $DOTFILES_DIR/config/zsh/functions.zsh
 
 # ------------------------------------------------------------------------
 # wordstyle
 # ------------------------------------------------------------------------
-source $DOTFILES_DIR/zsh/wordstyle.zsh
+source $DOTFILES_DIR/config/zsh/wordstyle.zsh
 

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Homebrewのインストール
 if ! command -v brew &> /dev/null; then
@@ -18,6 +18,7 @@ brew install rbenv
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install nkf
+brew install tree
 brew install git-lfs
 git lfs install
 
