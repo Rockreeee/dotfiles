@@ -5,15 +5,14 @@ DOTFILES_DIR=~/dotfiles
 # バックアップディレクトリ
 BACKUP_DIR=~/.backup-vscode
 
-SCRIPT_DIR=$(cd $(dirname $0) && pwd)
+# VSCodeディレクトリ
 VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
 
 
 # バックアップディレクトリが存在しない場合は作成
 if [ ! -d "$BACKUP_DIR" ]; then
-    echo "Creating backup directory at $BACKUP_DIR"
+    echo "💪 Creating backup directory at $BACKUP_DIR"
     mkdir -p "$BACKUP_DIR"
-    echo  # 改行を追加
 fi
 
 # シンボリックリンクを作成する関数
@@ -23,20 +22,19 @@ create_symlink() {
 
     if [ -e "$destination" ]; then
         if [ ! -L "$destination" ]; then  # シンボリックリンクでない場合のみ移動
-            echo "$destination already exists. Moving to backup..."
+            echo "😲 $destination already exists. Moving to backup..."
             mv "$destination" "$BACKUP_DIR"
         else
-            echo "$destination is a symlink, not moving."
+            echo "👋 $destination is a symlink, not moving."
+        fi
     fi
-fi
 
     ln -nfs "$source" "$destination"  # シンボリックリンクを作成
-    echo "Created symlink: $destination -> $source"
-    echo  # 改行を追加
+    echo "💪 Created symlink: $destination -> $source"
 }
 
 # vscode 設定
-echo "Setting up Vscode..."
+echo "🚀 Setting up Vscode..."
 create_symlink "keybindings.json"
 create_symlink "settings.json"
 
@@ -47,9 +45,12 @@ installed_extensions=$(code --list-extensions)
 # extensionsファイルから不足している拡張機能をインストール
 while IFS= read -r line || [ -n "$line" ]; do
     if ! echo "$installed_extensions" | grep -q "$line"; then
-        echo "Installing $line..."
+        echo "💪 Installing $line..."
         code --install-extension "$line"
     else
-        echo "$line is already installed, skipping."
+        echo "👋 $line is already installed, skipping."
     fi
 done < "$DOTFILES_DIR/config/vscode/extensions"
+
+# 完了メッセージ
+echo "🤛 VSCode setup complete!"

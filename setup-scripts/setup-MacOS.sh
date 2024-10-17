@@ -3,47 +3,49 @@
 # ------------------------------------------------------------------------
 # トラックパッドの速度設定
 # ------------------------------------------------------------------------
-echo "Setting trackpad speed..."
+echo "💪 Setting trackpad speed..."
 defaults write -g com.apple.trackpad.scaling 3.0
 
 # ------------------------------------------------------------------------
 # Dockの自動隠し遅延をなくす
 # ------------------------------------------------------------------------
-echo "Setting dock auto-hide delay..."
+echo "💪 Setting dock auto-hide delay..."
 defaults write com.apple.dock autohide-delay -float 0
 
 # ------------------------------------------------------------------------
 # キーボード長押し連打機能有効化
 # ------------------------------------------------------------------------
-echo "Setting dock ApplePressAndHoldEnabled delay..."
+echo "💪 Setting dock ApplePressAndHoldEnabled delay..."
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # ------------------------------------------------------------------------
 # キーのリピート
 # ------------------------------------------------------------------------
+echo "💪 Changing time to key repeat..."
 defaults write -g KeyRepeat 2
 
 # ------------------------------------------------------------------------
 # リピート入力認識までの時間
 # ------------------------------------------------------------------------
+echo "💪 Changing time to repeat input recognition..."
 defaults write -g InitialKeyRepeat 15
 
 # ------------------------------------------------------------------------
 # Dockの自動表示・非表示を有効にする
 # ------------------------------------------------------------------------
-echo "Enabling dock auto-hide..."
+echo "💪 Enabling dock auto-hide..."
 defaults write com.apple.dock autohide -bool true
 
 # ------------------------------------------------------------------------
 # Dockのサイズ設定
 # ------------------------------------------------------------------------
-echo "Setting dock size..."
+echo "💪 Setting dock size..."
 defaults write com.apple.dock tilesize -int 70
 
 # ------------------------------------------------------------------------
 # ScreenShotの保存先変更
 # ------------------------------------------------------------------------
-
+echo "💪 Changing destination of ScreenShot..."
 defaults write com.apple.screencapture location ~/Desktop/Screenshot
 
 # ------------------------------------------------------------------------
