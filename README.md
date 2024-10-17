@@ -20,7 +20,8 @@ export DOTFILES_DIR=~/dotfiles
 │       ├── functions.zsh       # 関数の定義
 │       └── oh-my-zsh.zsh       # oh-my-zshの設定
 ├── setup-scripts/
-│   ├── install-brew-package.sh # homebrewのインストールなど
+│   ├── install-apps.sh         # アプリのインストール
+│   ├── install-brew-package.sh # homebrewのパッケージインストール
 │   ├── install-oh-my-zsh.sh    # oh-my-zshのインストール
 │   ├── setup-git.sh            # gitのセットアップ
 │   ├── setup-MacOS.sh          # mac設定のセットアップ
@@ -55,6 +56,7 @@ chmod +x ~/dotfiles/setup-scripts/install-brew-packages.sh
 # 実行
 ~/dotfiles/setup-scripts/install-brew-packages.sh
 ```
+
 ## oh-my-zsh&power10kをインストール
  ```zsh
 # 実行権限付与
@@ -85,6 +87,14 @@ chmod +x ~/dotfiles/setup-scripts/setup-git.sh
 chmod +x ~/dotfiles/setup-scripts/setup-MacOS.sh
 # 実行
 ~/dotfiles/setup-scripts/setup-MacOS.sh
+```
+
+## アプリをインストール
+ ```zsh
+# 実行権限付与
+chmod +x ~/dotfiles/setup-scripts/install-apps.sh
+# 実行
+~/dotfiles/setup-scripts/install-apps.sh
 ```
 
 # Vscodeのセットアップ

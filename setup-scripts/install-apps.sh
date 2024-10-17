@@ -12,20 +12,6 @@ fi
 echo "💪 Homebrewをアップデートしています..."
 brew update
 
-# パッケージのインストール
-echo "💪 パッケージをインストールしています..."
-brew install jq       # JSON処理ツール
-brew install fzf       
-brew install bat       
-brew install node      
-brew install rbenv      
-brew install zsh-autosuggestions
-brew install zsh-syntax-highlighting
-brew install nkf
-brew install tree
-brew install git-lfs
-git lfs install
-
 # アプリケーションのインストール
 echo "💪 アプリケーションをインストールしています..."
 brew install --cask google-chrome
@@ -42,4 +28,4 @@ brew install --cask google-japanese-ime
 brew install --cask astah-proffesional
 
 # 完了メッセージ
-echo "🤛 Homebrewとパッケージのインストールが完了しました！"
+echo "🤛 アプリのインストールが完了しました！"

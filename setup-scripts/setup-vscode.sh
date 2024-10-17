@@ -5,9 +5,14 @@ DOTFILES_DIR=~/dotfiles
 # バックアップディレクトリ
 BACKUP_DIR=~/.backup-vscode
 
-# VSCodeディレクトリ
+# VSCode設定ディレクトリ
 VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
 
+# VSCodeがインストールされているか確認
+if ! command -v code &> /dev/null; then
+    echo "🙅‍♂️ VSCodeがインストールされていません。インストールしてから再実行してください。"
+    exit 1
+fi
 
 # バックアップディレクトリが存在しない場合は作成
 if [ ! -d "$BACKUP_DIR" ]; then
