@@ -35,9 +35,5 @@ echo "Setting up Zsh..."
 create_symlink ".zshrc"
 create_symlink ".zshenv"
 
-# Git 設定
-echo "Setting up Git..."
-create_symlink ".gitconfig"
-
 # 完了メッセージ
 echo "Dotfiles setup complete!🤛"

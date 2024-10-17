@@ -40,8 +40,14 @@ defaults write com.apple.dock autohide -bool true
 echo "Setting dock size..."
 defaults write com.apple.dock tilesize -int 70
 
+# ------------------------------------------------------------------------
+# ScreenShotの保存先変更
+# ------------------------------------------------------------------------
+
+defaults write com.apple.screencapture location ~/Desktop/Screenshot
 
 # ------------------------------------------------------------------------
 # 設定の反映
 # ------------------------------------------------------------------------
 killall Dock
+killall SystemUIServer

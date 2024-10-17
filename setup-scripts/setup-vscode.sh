@@ -2,11 +2,12 @@
 
 DOTFILES_DIR=~/dotfiles
 
+# バックアップディレクトリ
+BACKUP_DIR=~/.backup-vscode
+
 SCRIPT_DIR=$(cd $(dirname $0) && pwd)
 VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
 
-# バックアップディレクトリ
-BACKUP_DIR=~/.backup-vscode
 
 # バックアップディレクトリが存在しない場合は作成
 if [ ! -d "$BACKUP_DIR" ]; then
