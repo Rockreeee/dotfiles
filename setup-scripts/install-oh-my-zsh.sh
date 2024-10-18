@@ -2,18 +2,18 @@
 
 # Oh My Zshがすでにインストールされているか確認
 if [ -d "$HOME/.oh-my-zsh" ]; then
-  echo "👋 Oh My Zshは既にインストールされています。スキップします。"
+  echo "👋 Oh My Zsh is already installed."
 else
-  echo "💪 Oh My Zshをインストールしています..."
+  echo "💪 Installing Oh My Zsh"
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
 # Powerlevel10kがすでにインストールされているか確認
 POWERLEVEL10K_DIR="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
 if [ -d "$POWERLEVEL10K_DIR" ]; then
-  echo "👋 Powerlevel10kは既にインストールされています。スキップします。"
+  echo "👋 Powerlevel10k is already installed."
 else
-  echo "💪 Powerlevel10kをインストールしています..."
+  echo "💪 Installing Powerlevel10k..."
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$POWERLEVEL10K_DIR"
 fi
 

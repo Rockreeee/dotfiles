@@ -2,18 +2,18 @@
 
 # Homebrewのインストール
 if ! command -v brew &> /dev/null; then
-    echo "💪 Homebrewをインストールしています..."
+    echo "💪 Installing Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
-    echo "👋 Homebrewはすでにインストールされています。"
+    echo "👋 Homebrew is already installed."
 fi
 
 # Homebrewのアップデート
-echo "💪 Homebrewをアップデートしています..."
+echo "💪 Updating Homebrew..."
 brew update
 
 # アプリケーションのインストール
-echo "💪 アプリケーションをインストールしています..."
+echo "💪 Installing applications..."
 brew install --cask google-chrome
 brew install --cask microsoft-office
 brew install --cask visual-studio-code
@@ -28,4 +28,4 @@ brew install --cask google-japanese-ime
 brew install --cask astah-proffesional
 
 # 完了メッセージ
-echo "🤛 アプリのインストールが完了しました！"
+echo "🤛 Application installation complete!"

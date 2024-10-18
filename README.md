@@ -1,9 +1,7 @@
 # dotfilesのディレクトリ構造
 ホームでヒレクトリ直下にクローンすることをおすすめします。（それ以外にクローンする時は、dotfiles/zshenvの以下を編集してください。）
-```zsh
-# dotfiles path
-export DOTFILES_DIR=~/dotfiles
-```
+
+コードの解説は[こちら](https://qiita.com/Rockreeee/items/e59b1c4c764d4079c657)
 
 ```zsh
 ~/dotfiles/
@@ -73,7 +71,7 @@ chmod +x ~/dotfiles/setup-scripts/setup-zsh.sh
 ~/dotfiles/setup-scripts/setup-zsh.sh
 ```
 
-## gitのセットアップ
+# gitのセットアップ
 ```zsh
 # 実行権限付与
 chmod +x ~/dotfiles/setup-scripts/setup-git.sh
@@ -89,7 +87,7 @@ chmod +x ~/dotfiles/setup-scripts/setup-MacOS.sh
 ~/dotfiles/setup-scripts/setup-MacOS.sh
 ```
 
-## アプリをインストール
+# アプリをインストール
  ```zsh
 # 実行権限付与
 chmod +x ~/dotfiles/setup-scripts/install-apps.sh
