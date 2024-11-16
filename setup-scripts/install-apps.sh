@@ -15,17 +15,17 @@ brew update
 # アプリケーションのインストール
 echo "💪 Installing applications..."
 brew install --cask google-chrome
-brew install --cask microsoft-office
+# brew install --cask microsoft-office
 brew install --cask visual-studio-code
 brew install --cask deepl
 brew install --cask iterm2
-brew install --cask slack
-brew install --cask zoom
+# brew install --cask slack
+# brew install --cask zoom
 brew install --cask chatgpt
 brew install --cask raycast
 brew install --cask rectangle
-brew install --cask google-japanese-ime
-brew install --cask astah-proffesional
+# brew install --cask google-japanese-ime
+# brew install --cask astah-proffesional
 
 # 完了メッセージ
 echo "🤛 Application installation complete!"
