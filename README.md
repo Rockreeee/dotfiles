@@ -32,6 +32,7 @@
 └── .zshrc                      # インタラクティブシェル用の設定
 ```
 <span style="color:red;">.gitconfig-personal</span>と<span style="color:red;">.gitconfig-work</span>は自身で追加する必要あり。
+
 - **.gitconfig-personal**: 個人のGitの設定ファイル
 ```zsh
 [user]
@@ -48,7 +49,7 @@
 
 # zsh環境のセットアップ
 ## 必要なhomebrewパッケージをインストール
- ```zsh
+```zsh
 # 実行権限付与
 chmod +x ~/dotfiles/setup-scripts/install-brew-packages.sh
 # 実行
@@ -56,7 +57,7 @@ chmod +x ~/dotfiles/setup-scripts/install-brew-packages.sh
 ```
 
 ## oh-my-zsh&power10kをインストール
- ```zsh
+```zsh
 # 実行権限付与
 chmod +x ~/dotfiles/setup-scripts/install-oh-my-zsh.sh
 # 実行
@@ -88,7 +89,7 @@ chmod +x ~/dotfiles/setup-scripts/setup-MacOS.sh
 ```
 
 # アプリをインストール
- ```zsh
+```zsh
 # 実行権限付与
 chmod +x ~/dotfiles/setup-scripts/install-apps.sh
 # 実行
