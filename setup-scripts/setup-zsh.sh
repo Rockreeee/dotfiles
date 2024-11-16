@@ -22,6 +22,7 @@ create_symlink() {
             mv "$destination" "$BACKUP_DIR"
         else
             echo "👋 $destination is a symlink, not moving."
+        fi
     fi
 
     ln -nfs "$source" "$destination"  # シンボリックリンクを作成
