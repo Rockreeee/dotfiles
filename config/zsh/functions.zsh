@@ -158,3 +158,20 @@ function zsh_convert_all() {
 }
 zle -N zsh_convert_all
 
+# git stashしたリストの中から選択し、applyする関数
+function git_stash_list_apply() {
+    # stash list を取得して選択
+    local selected_stash=$(git stash list | fzf --height=15 --prompt="Select a stash to apply: ")
+
+    # 選択されなかった場合は終了
+    if [[ -z "$selected_stash" ]]; then
+        echo "No stash selected. Aborting."
+        return 1
+    fi
+
+    # 選択された stash 名を抽出 (例: 'stash@{0}')
+    local stash_name=$(echo "$selected_stash" | sed -E 's/^(stash@\{[0-9]+\}):.*/\1/')
+
+    # stash apply を実行
+    git stash apply "$stash_name"
+}
