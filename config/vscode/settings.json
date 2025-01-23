@@ -1,8 +1,4 @@
 {
     "files.autoSave": "afterDelay",
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorCustomizations": {
-        "titleBar.activeBackground": "#BAF728",
-        "titleBar.activeForeground": "#000"
-    }
 }
