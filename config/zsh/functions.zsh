@@ -159,9 +159,9 @@ function zsh_convert_all() {
 zle -N zsh_convert_all
 
 # git stashしたリストの中から選択し、applyする関数
-function git_stash_list_apply() {
-    # stash list を取得して選択
-    local selected_stash=$(git stash list | fzf --height=15 --prompt="Select a stash to apply: ")
+function git_stash_list_action() {
+    # stash list を取得して fzf で選択
+    local selected_stash=$(git stash list | fzf --height=15 --prompt="Select a stash: ")
 
     # 選択されなかった場合は終了
     if [[ -z "$selected_stash" ]]; then
@@ -172,6 +172,29 @@ function git_stash_list_apply() {
     # 選択された stash 名を抽出 (例: 'stash@{0}')
     local stash_name=$(echo "$selected_stash" | sed -E 's/^(stash@\{[0-9]+\}):.*/\1/')
 
-    # stash apply を実行
-    git stash apply "$stash_name"
+    # 操作の選択
+    local action=$(echo -e "apply\npop\ndrop" | fzf --height=10 --prompt="Select an action: ")
+
+    # 選択されなかった場合は終了
+    if [[ -z "$action" ]]; then
+        echo "No action selected. Aborting."
+        return 1
+    fi
+
+    # 選択された操作を実行
+    case "$action" in
+        apply)
+            git stash apply "$stash_name"
+            ;;
+        pop)
+            git stash pop "$stash_name"
+            ;;
+        drop)
+            git stash drop "$stash_name"
+            ;;
+        *)
+            echo "Invalid action. Aborting."
+            return 1
+            ;;
+    esac
 }
