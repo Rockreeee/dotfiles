@@ -24,6 +24,7 @@ brew install zsh-syntax-highlighting
 brew install nkf
 brew install tree
 brew install git-lfs
+brew install flutter
 git lfs install
 
 # 完了メッセージ

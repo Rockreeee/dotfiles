@@ -24,7 +24,7 @@ brew install --cask iterm2
 brew install --cask chatgpt
 brew install --cask raycast
 brew install --cask rectangle
-# brew install --cask google-japanese-ime
+brew install --cask google-japanese-ime
 # brew install --cask astah-proffesional
 
 # 完了メッセージ

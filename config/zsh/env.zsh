@@ -22,3 +22,9 @@ if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
 # Cursor
 # ------------------------------------------------------------------------
 export PATH="/Applications/Cursor.app/Contents/MacOS:$PATH"
+
+
+# ------------------------------------------------------------------------
+# Flutter
+# ------------------------------------------------------------------------
+export PATH="$PATH:`pwd`/flutter/bin"
