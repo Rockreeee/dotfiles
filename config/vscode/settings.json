@@ -1,4 +1,6 @@
 {
     "files.autoSave": "afterDelay",
     "security.workspace.trust.untrustedFiles": "open",
+    "editor.copyWithSyntaxHighlighting": false,
+    "hediet.vscode-drawio.resizeImages": null
 }

@@ -104,6 +104,14 @@ chmod +x ~/dotfiles/setup-scripts/setup-vscode.sh
 ~/dotfiles/setup-scripts/setup-vscode.sh
 ```
 
+# Cursorのセットアップ
+```zsh
+# 実行権限付与
+chmod +x ~/dotfiles/setup-scripts/setup-cursor.sh
+# 実行
+~/dotfiles/setup-scripts/setup-cursor.sh
+```
+
 # おすすめサイト
 iterm2の設定：
 https://qiita.com/ruwatana/items/8d9c174250061721ad11

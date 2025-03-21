@@ -28,3 +28,4 @@ export PATH="/Applications/Cursor.app/Contents/MacOS:$PATH"
 # Flutter
 # ------------------------------------------------------------------------
 export PATH="$PATH:`pwd`/flutter/bin"
+export PATH="$PATH":"$HOME/.pub-cache/bin"

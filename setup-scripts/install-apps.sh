@@ -26,6 +26,7 @@ brew install --cask raycast
 brew install --cask rectangle
 brew install --cask google-japanese-ime
 # brew install --cask astah-proffesional
+brew install --cask cursor
 
 # 完了メッセージ
 echo "🤛 Application installation complete!"
